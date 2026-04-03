@@ -1,122 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Auth App</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-    }
 
-    .container {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      width: 320px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      text-align: center;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background: #4facfe;
-      border: none;
-      color: white;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #00c6ff;
-    }
-
-    .toggle {
-      margin-top: 15px;
-      cursor: pointer;
-      color: #4facfe;
-    }
-
-    .message {
-      margin-top: 10px;
-      color: green;
-    }
-  </style>
-</head>
-<body>
-
-
-  <h1>Welcome!</h1>
-
-<div class="container">
-  <h2 id="title">PaaSCC app Login</h2>
-
-  <input type="text" id="name" placeholder="Username" />
-  <input type="password" id="password" placeholder="Password" />
-
-  <button onclick="submitForm()">Submit</button>
-
-  <div class="toggle" onclick="toggleMode()">
-    Don't have an account? Sign up
-  </div>
-
-  <div class="message" id="message"></div>
-</div>
-
-<script>
-  let isLogin = true;
-
-  function toggleMode() {
-    isLogin = !isLogin;
-    document.getElementById("title").innerText = isLogin ? "Login" : "Sign Up";
-    document.querySelector(".toggle").innerText = isLogin
-      ? "Don't have an account? Sign up"
-      : "Already have an account? Login";
-  }
-
-  async function submitForm() {
-    const name = document.getElementById("name").value;
-    const password = document.getElementById("password").value;
-
-    const endpoint = isLogin ? "/login" : "/register";
-
-    const res = await fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ name, password })
-    });
-
-    const data = await res.json();
-
-    if (isLogin) {
-      document.getElementById("message").innerText = "Login successful!";
-      localStorage.setItem("token", data.token);
-    } else {
-      document.getElementById("message").innerText = "Registered successfully!";
-    }
-  }
-</script> -->
 
 </body>
 </html>
@@ -132,14 +14,16 @@
 <body>
 
 <div class="container">
-  <h1>🚀 Cloud App</h1>
+  <h1>PaaS Cloud App</h1>
 
   <div class="form-box">
-    <h2>Sign Up</h2>
+    <h2>...</h2>
     <input type="text" id="signupName" placeholder="Username">
     <input type="password" id="signupPassword" placeholder="Password">
     <button onclick="signup()">Sign Up</button>
   </div>
+
+  <!-- <button onclick="">Login</button> -->
 
   <div class="form-box">
     <h2>Login</h2>
