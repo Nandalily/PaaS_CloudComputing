@@ -16,7 +16,7 @@ const pool = new Pool({
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("Railway App Running 🚀");
+  res.send("Railway App Running 🚀 Perfectly");
 });
 
 // Test DB connection
