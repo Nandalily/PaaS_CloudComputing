@@ -16,7 +16,7 @@ const pool = new Pool({
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("Railway App Running 🚀 Perfectly");
+  res.send("Welcome to our Pass-CloudComputing App, Ready to serve you perfectly");
 });
 
 // Test DB connection
